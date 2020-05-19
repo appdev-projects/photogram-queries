@@ -3,7 +3,7 @@ module ActiveRecord
     def to_s
       row_count = count
       
-      "#{self.class} (array with #{row_count} #{model} instances inside)"      
+      "#{self.class} (array with #{row_count} #{model} #{"instance".pluralize(row_count)} inside)"
     end
   end
 end
